@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Big+Shoulders+Display:wght@200;500;700&family=Commissioner:wght@400;500;700&family=Exo:wght@100&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --Pale-Violet :hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet : hsl(270, 7%, 64%);
+    /* secondary colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(247, 245, 245); */
+}
+main{
+    display: flex;
+    width: 100%;
+    gap: 6rem;
+    align-items: center;
+}
+.container{
+    width: 235px;
+    height: 497px;
+    margin: 5rem 0 0 22rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 234, 234);
+    border: solid 9px #fff;
+    border-radius: 2.3rem;
+    box-shadow: 1px 1px 2px 0    black;
+}
+nav{
+    background:linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%) );
+    width: 100%;
+    height: 11vh;
+    border-radius: 1.7rem 1.7rem .4rem .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.items-a, .fa-solid{
+    padding: .7em;
+    margin-top: 1.1em;
+}
+.fa-angle-left{
+    align-self: flex-start;
+    padding: 1rem;
+    margin-top: 0;
+}
+nav .items-a,.info{
+    display: flex;
+    align-items: center;
+}
+.items-a{
+   margin-left: -1em;
+}
+.avatar{   
+    width: 26px;
+    border-radius: 2em;
+    border: solid 1px #fff;
+
+}
+.fa-solid{
+    color: #fff;
+}
+.info{
+    align-items: flex-end;
+    gap: .5rem;
+    
+}
+.person-i{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    
+}
+.person-i .name{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.person-i .state{
+    font-size: .7rem;
+    color: var(--Light-Grayish-Violet);
+  
+}
+.top-mobile{
+    width: 9em;
+    height: 1.2em;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    border-radius: 0 0 1.1rem 1.1rem;
+
+}
+
+/* text section */
+.sect-1 {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    padding: .3rem .7rem;
+}
+.sect-1 p{
+    background-color: hsla(276, 100%, 81%, 0.171);
+    color: var(--Moderate-Violet);
+    padding: .5em .7em;
+    font-size: 9px;
+    border-radius: 1em;
+}
+.sect-1 :last-child{
+    margin-top: -1px;
+}
+/* section-2 */
+
+.sect-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sect-2 div{
+    padding: 0 .3rem;
+    width: 66%;
+    align-self: flex-end;
+}
+.pic-container{
+    display: flex;
+    gap: 7px;
+}
+.dog-pictures{
+    width: 40px;
+    border-radius: .8rem;    
+}
+.sect-2 p{
+    padding: .4rem .7rem;
+    font-size: 9px;
+    /* width: 70%; */
+    
+    border-radius: .4rem;
+    background-color: #fff;
+    color: var(--Very-Dark-Desaturated-Violet);
+    
+}
+.sect-2 p:last-child{
+    margin-top: -.2rem;
+}
+/* section3 */
+.sect-3{
+    width: 68%;
+    padding:0 1rem;
+    margin-top: -1rem
+
+}
+.sect-3 p{
+    background-color: hsla(276, 100%, 81%, 0.171);
+    color: var(--Moderate-Violet);
+    padding: .7rem;
+    font-size: 9px;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.price-sec{
+    width: 100%;
+    background:linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%) );
+    padding: .6rem ;
+    border-radius: .7rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.price-sec .time{
+    font-weight: 400;
+    font-size: 10px;
+    color: hsla(270, 20%, 96%, 0.678);
+}
+
+.price{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.last-sec{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: .4rem .7rem;   
+    position: relative;
+    margin-top: -5px;
+    
+}
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .9rem ;
+    border-radius: 2rem;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--Dark-Grayish-Violet);
+}
+.icon{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.685);
+    top: 10px;
+    right: 14px;
+    border-radius: 1rem;
+    padding: 7px 12px;
+    transform: rotate(180deg);
+}
+
+
+.design{
+    width: 30%;
+    height: 95%;
+    border-radius: 0 0 19rem 19rem;
+    background: linear-gradient(to bottom,hsl(293, 83%, 54%),hsl(264, 100%, 61%)) ;
+    /* background:linear-gradient(to right,hsla(264, 66%, 45%, 0.733),hsl(264, 100%, 61%)); */
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: block;
+}
+.container{
+    z-index: 10;
+}
+.text-side{
+    width: 35%;
+    line-height: 1.4rem;
+    margin-top: 3rem;
+}
+h1{
+    font-weight: 500;
+}
+.text-side p{
+    color: var(--Dark-Grayish-Violet);
+    margin-top: 2rem;
+}
+
+
+@media(max-width:414px),(max-width:500px),(max-width:700px),(max-width:790px){
+    main{
+       flex-direction: column;
+       width: 100%;
+       gap: 1.3rem;
+    }
+    .container{
+        margin: 8rem 0;
+    }
+    .text-side{
+        width: 79%;
+        text-align: center;
+
+    }
+    h1{
+        font-size: 2.4rem;
+    }
+    .design{
+        left: 0;
+        width: 50%;
+        height: 80vh;
+        border-radius: 0 0 15rem 0;
+    }
+}
